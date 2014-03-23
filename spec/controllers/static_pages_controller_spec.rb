@@ -3,6 +3,10 @@ require 'spec_helper'
 describe StaticPagesController do
   render_views
 
+  before(:each) do
+    @base_title = "Ruby on Rails Tutorial Sample App"
+  end
+
   describe "GET 'home'" do
 
     it "returns http success" do
@@ -12,7 +16,7 @@ describe StaticPagesController do
 
     it "should have the right title" do
       visit '/static_pages/home'
-      expect(page).to have_title("Ruby on Rails Tutorial Sample App | Home")
+      expect(page).to have_title("#{@base_title} | Home")
     end
 
     it "should have a non-blank body" do
@@ -31,7 +35,7 @@ end
 
     it "should have the right title" do
         visit '/static_pages/contact'
-        expect(page).to have_title("Ruby on Rails Tutorial Sample App | Contact")
+        expect(page).to have_title("#{@base_title} | Contact")
     end
 
   end
@@ -45,7 +49,7 @@ end
 
     it "should have the right title" do
         visit '/static_pages/about'
-        expect(page).to have_title("Ruby on Rails Tutorial Sample App | About")
+        expect(page).to have_title("#{@base_title} | About")
     end
 
   end
