@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<title><%= title %>"</title>
+		<%= csrf_meta_tag %>
+		<%= stylesheet_link_tag 'blueprint/screen', meedia:'screen' %>
+		<%= stylesheet_link_tag 'blueprint/print', media:'print' %>
 
-<head>
-	<title><%= title %>"</title>
-	<%= csrf_meta_tag %>
-</head>
+	</head>
 
-<body>
-	<%= yield %>
-</body>
-
+	<body>
+		<%= yield %>
+	</body>
 </html>
 
