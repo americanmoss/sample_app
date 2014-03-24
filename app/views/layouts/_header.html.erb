@@ -1,14 +1,16 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
-	<div class="navbar-inner">
-        		<div class="container">
-          		<%= link_to "sample app", '#', id: "logo" %>
-	          		<nav>
-	            		<ul class="nav pull-right">
-			              <li><%= link_to "Home",    '#' %></li>
-			              <li><%= link_to "Help",    '#' %></li>
-			              <li><%= link_to "Sign in", '#' %></li>
-	            		</ul>
-	          		</nav>
-        		</div>
-      	</div>
+<header>
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+     <div class="container">
+     	<div class="navbar-header">
+     		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	         	   <%= link_to "sample app", '#', id: "logo" %>
+      			<ul class="nav navbar-nav">
+			        <li><%= link_to "Home", root_path %></li>
+			        <li><%= link_to "Help", help_path %></li>
+			        <li><%= link_to "Sign in", '#' %></li>
+        			</ul>
+   		 </div>
+   	</div>
+     </div>
+  </nav>
 </header>

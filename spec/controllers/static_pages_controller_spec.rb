@@ -15,12 +15,12 @@ describe StaticPagesController do
     end
 
     it "should have the right title" do
-      visit '/static_pages/home'
+      visit '/'
       expect(page).to have_title("#{@base_title} | Home")
     end
 
     it "should have a non-blank body" do
-      visit '/static_pages/home'
+      visit '/'
       response.body.should_not =~ /<body>\s*<\/body>/
     end
 
@@ -34,7 +34,7 @@ end
     end
 
     it "should have the right title" do
-        visit '/static_pages/contact'
+        visit '/contact'
         expect(page).to have_title("#{@base_title} | Contact")
     end
 
@@ -48,8 +48,22 @@ end
     end
 
     it "should have the right title" do
-        visit '/static_pages/about'
+        visit '/about'
         expect(page).to have_title("#{@base_title} | About")
+    end
+
+  end
+
+  describe "GET 'help'" do
+
+    it "returns http success" do
+      get 'help'
+      response.should be_success
+    end
+
+    it "should have the right title" do
+        visit '/help'
+        expect(page).to have_title("#{@base_title} | Help")
     end
 
   end
