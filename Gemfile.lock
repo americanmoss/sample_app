@@ -176,6 +176,7 @@ DEPENDENCIES
   rails3_serve_static_assets!
   rails_12factor
   rails_log_stdout!
+  rails_serve_static_assets
   rspec (~> 2.13.0)
   rspec-rails (~> 2.13.0)
   sass-rails (~> 4.0.2)
