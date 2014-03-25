@@ -22,4 +22,9 @@ describe "StaticPages" do
 		expect(page).to have_title("Help")
 	end
 
+	it "should have a Signup page at /signup" do
+		visit "/signup"
+		expect(page).to have_title("Signup")
+	end
+
 end
