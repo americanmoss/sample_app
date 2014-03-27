@@ -20,6 +20,9 @@ end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
 
+#Use sprockets for asset management
+gem 'sprockets', '2.11.0'
+
 #Use bootstrap for styling
 gem 'bootstrap-sass'
 
