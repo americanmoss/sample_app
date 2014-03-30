@@ -24,6 +24,9 @@ RSpec.configure do |config|
   #Update for new version
   config.include Capybara::DSL
 
+  #Named paths
+  config.include Rails.application.routes.url_helpers
+
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
