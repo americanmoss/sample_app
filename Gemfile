@@ -26,13 +26,6 @@ gem 'sprockets', '2.11.0'
 #Use bootstrap for styling
 gem 'bootstrap-sass'
 
-#Pagination
-gem 'will_paginate', '3.0.4'
-gem 'bootstrap-will_paginate', '0.0.9'
-
-#Database population
-gem 'faker', '1.1.2'
-
 #Password hashing
 gem 'bcrypt-ruby', '3.1.2'
 
