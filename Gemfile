@@ -29,6 +29,13 @@ gem 'bootstrap-sass'
 #Password hashing
 gem 'bcrypt-ruby', '3.1.2'
 
+#Sample user creation
+gem 'faker', '1.1.2'
+
+#Pagination
+gem 'will_paginate', '3.0.4'
+gem 'bootstrap-will_paginate', '0.0.10'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 

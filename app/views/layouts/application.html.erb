@@ -10,7 +10,11 @@
 		<%= render "layouts/header" %>
 		<div class = "container">
 			<% flash.each do |key, value| %>
-        				<div class="alert alert-<%= key %>"><%= value %></div>
+				<% if key.to_s == "notice" %>
+					<div class="alert alert-warning"><%= value %></div>
+				<% else %>
+        					<div class="alert alert-<%= key %>"><%= value %></div>
+        				<% end %>
      			<% end %>
 			<%= yield %>
 
